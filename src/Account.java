@@ -27,12 +27,12 @@ public class Account {
         }
     }
 
-    // Locking system for Handeling a withdrawl
+    // Locking system for Handling a withdrawal
     public void withdrawl() throws InterruptedException {
         int sub = randTransaction.newNumber(false);
         accessLock.lock();
         try {
-// If funds, perform transactios.
+// If funds, perform transactions.
             if (balance > sub) {
                 balance -= sub;
                 System.out.printf("\t\t\t\tThread %s withdrawals $%-3d\tBalance is $%-3d\n", Thread.currentThread().getName(), sub, balance);

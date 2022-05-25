@@ -19,11 +19,16 @@ public class Main {
                 Thread d4 = new Thread(d, "d4");
                 Thread d5 = new Thread(d, "d5");
 
-                Thread w1 = new Thread(w, "4");
-                Thread w2 = new Thread(w, "5");
-                Thread w3 = new Thread(w, "6");
-                Thread w4 = new Thread(w, "7");
-                Thread w5 = new Thread(w, "8");
+                Thread w1 = new Thread(w, "w1");
+                Thread w2 = new Thread(w, "w2");
+                Thread w3 = new Thread(w, "w3");
+                Thread w4 = new Thread(w, "w4");
+                Thread w5 = new Thread(w, "w5");
+                Thread w6 = new Thread(w, "w6");
+                Thread w7 = new Thread(w, "w7");
+                Thread w8 = new Thread(w, "w8");
+                Thread w9 = new Thread(w, "w9");
+                Thread w10 = new Thread(w, "w10");
 
 // Start threads
                 d1.start();
@@ -36,5 +41,10 @@ public class Main {
                 d3.start();
                 d4.start();
                 d5.start();
+                w6.start();
+                w7.start();
+                w8.start();
+                w9.start();
+                w10.start();
         }
 }
