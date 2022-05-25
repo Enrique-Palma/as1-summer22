@@ -35,13 +35,13 @@ public class Account {
 // If funds, perform transactios.
             if (balance > sub) {
                 balance -= sub;
-                System.out.printf("\t\t\t\tThread %s withdrawls $%-3d\tBalence is $%-3d\n", Thread.currentThread().getName(), sub, balance);
+                System.out.printf("\t\t\t\tThread %s withdrawals $%-3d\tBalance is $%-3d\n", Thread.currentThread().getName(), sub, balance);
             }
 
 // If insufficient funds, wait until deposit to try again
             else {
                 while (balance < sub) {
-                    System.out.printf("\t\t\t\tThread %s withdrawls $%-3d\tWithdrawl - Blocked - Insufficient Funds\n", Thread.currentThread().getName(), sub);
+                    System.out.printf("\t\t\t\tThread %s withdrawals $%-3d\twithdrawals - Blocked - Insufficient Funds\n", Thread.currentThread().getName(), sub);
                     sufficientFunds.await();
                 }
             }

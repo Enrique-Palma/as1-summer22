@@ -5,17 +5,19 @@ public class Main {
                 Account account = new Account();
 
 // Prepare Base Output
-                System.out.printf("Deposit Threads\t\t\tWithdrawl Threads\t\tBalence\t\t\t\n");
+                System.out.printf("Deposit Threads\t\t\tWithdrawal Threads\t\tBalance\t\t\t\n");
                 System.out.printf("---------------\t\t\t-----------------\t\t---------------\t\t\t\n");
 
 // Setup Type of Threads
                 depositThread d = new depositThread(account);
                 withdrawlThread w = new withdrawlThread(account);
 
-// Initalize threads
-                Thread d1 = new Thread(d, "1");
-                Thread d2 = new Thread(d, "2");
-                Thread d3 = new Thread(d, "3");
+// Initialize threads
+                Thread d1 = new Thread(d, "d1");
+                Thread d2 = new Thread(d, "d2");
+                Thread d3 = new Thread(d, "d3");
+                Thread d4 = new Thread(d, "d4");
+                Thread d5 = new Thread(d, "d5");
 
                 Thread w1 = new Thread(w, "4");
                 Thread w2 = new Thread(w, "5");
@@ -32,5 +34,7 @@ public class Main {
                 w4.start();
                 w5.start();
                 d3.start();
+                d4.start();
+                d5.start();
         }
 }

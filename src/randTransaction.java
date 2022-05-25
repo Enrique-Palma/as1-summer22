@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class randTransaction {
 
-    // Takes Boolean operator (true = deposit, false = withdrawl) and outputs random number
+    // Takes Boolean operator (true = deposit, false = withdrawal) and outputs random number
     public static int newNumber (boolean operator){
 
 //Random randomGenerator = new Random();
@@ -10,12 +10,12 @@ public class randTransaction {
 
 // If depositing money should be
         if (operator == true){
-            randomAmmount = integerRange(1, 200);
+            randomAmmount = integerRange(1, 500);
             return randomAmmount;
 
 // If withdrawling money
         } else {
-            randomAmmount = integerRange(1, 50);
+            randomAmmount = integerRange(1, 99);
             return randomAmmount;
         }
     }
