@@ -1,3 +1,5 @@
+import java.io.IOException;
+
 // Running loop for Withdrawl Thread
 public class withdrawlThread implements Runnable {
     private Account account;
@@ -16,6 +18,8 @@ public class withdrawlThread implements Runnable {
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
         }
     }
 }
