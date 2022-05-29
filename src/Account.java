@@ -41,7 +41,8 @@ public class Account
             if(add > 350)
             {
                 //System.out.printf("Flagged deposit over $350\n");
-                p.println("Flagged deposit over $350"+ date.toString());
+                p.println("Depositor  Agent ID:" + "\t" + Thread.currentThread().getName() + " issued deposit\t of $"+ add + "\t"  + " Timestamp: " + date.toString());
+                //p.println(Thread.currentThread().getName());
                 //p.println();
             }
 
@@ -65,16 +66,44 @@ public class Account
     }
 
     // Locking system for Handling a withdrawal
-    public void withdrawl() throws InterruptedException
+    public void withdrawl() throws InterruptedException ,IOException
     {
         int sub = randTransaction.newNumber(false);
         accessLock.lock();
-        try
+
+        //checks for withdrawal over $75
+        if(sub > 75)
         {
+            System.out.printf("Flagged deposit over $75\n");
+        }
+        ////////////////////////////////////////////////////
+
+        //testing flagging to text file - appending
+        java.util.Date date= new java.util.Date();
+        try (FileWriter f = new FileWriter("flaggedTransactionsLog.txt:", true);
+             BufferedWriter b = new BufferedWriter(f);
+             PrintWriter p = new PrintWriter(b);) {
             if(sub > 75)
             {
-                System.out.printf("Flagged withdrawal over $75\n");
+                //System.out.printf("Flagged deposit over $350\n");
+                p.println("Withdrawal Agent ID:" + "\t" + Thread.currentThread().getName() + " issued withdrawal of $" + sub+  "\t"  + " Timestamp: " + date.toString());
+                //p.println(Thread.currentThread().getName());
+                //p.println();
             }
+
+           /* p.println("Gaura");
+            p.println("Bori");*/
+
+        } catch (IOException i) {
+            i.printStackTrace();
+        }
+
+        try
+        {
+            /*if(sub > 75)
+            {
+                System.out.printf("Flagged withdrawal over $75\n");
+            }*/
 // If funds, perform transactions.
             if (balance > sub)
             {

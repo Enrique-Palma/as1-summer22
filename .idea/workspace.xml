@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd79ac7e-315e-4fcf-9477-6fbdb8d88f5b" name="Changes" comment="1.0.1-testing flags">
+    <list default="true" id="cd79ac7e-315e-4fcf-9477-6fbdb8d88f5b" name="Changes" comment="1.0.2-testing flags">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/depositThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/depositThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/randTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/randTransaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/withdrawlThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/withdrawlThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653797612283</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="1.0.2-testing flags">
+      <created>1653855346419</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1653855346419</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -178,7 +185,8 @@
     <MESSAGE value="1.0" />
     <MESSAGE value="1.0.1" />
     <MESSAGE value="1.0.1-testing flags" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.0.1-testing flags" />
+    <MESSAGE value="1.0.2-testing flags" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.0.2-testing flags" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
