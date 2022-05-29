@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class randTransaction {
+public class randTransaction extends Throwable {
 
     // Takes Boolean operator (true = deposit, false = withdrawal) and outputs random number
     public static int newNumber (boolean operator){
