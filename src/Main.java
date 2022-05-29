@@ -5,8 +5,8 @@ public class Main {
                 Account account = new Account();
 
 // Prepare Base Output
-                System.out.printf("Deposit Threads\t\t\tWithdrawal Threads\t\tBalance\t\t\t\n");
-                System.out.printf("---------------\t\t\t-----------------\t\t---------------\t\t\t\n");
+                System.out.printf("Deposit Threads\t\t\t\t\tWithdrawal Threads\t\t\tBalance\t\t\t\n");
+                System.out.printf("-------------------\t\t\t-----------------\t\t---------------\t\t\t\n");
 
 // Setup Type of Threads
                 depositThread d = new depositThread(account);

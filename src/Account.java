@@ -19,8 +19,13 @@ public class Account {
         int add = randTransaction.newNumber(true);
         accessLock.lock();
         try {
+            if (add > 350)
+            {
+                System.out.printf("Flagged deposit over $350\n");
+            }
+
             balance += add;
-            System.out.printf("Thread %s deposits $%-3d\t\t\t\t\t\tBalence is $%-3d\n", Thread.currentThread().getName(), add, balance);
+            System.out.printf("Agent %s deposits $%-3d -> -> -> -> -> -> -> -> -> -> -> ->  Balance is $%-3d\n", Thread.currentThread().getName(), add, balance);
             sufficientFunds.signalAll();
         } finally {
             accessLock.unlock();
@@ -35,13 +40,13 @@ public class Account {
 // If funds, perform transactions.
             if (balance > sub) {
                 balance -= sub;
-                System.out.printf("\t\t\t\tThread %s withdrawals $%-3d\tBalance is $%-3d\n", Thread.currentThread().getName(), sub, balance);
+                System.out.printf("\t\t\t\t\t\t\t\t\tAgent %s withdrawals $%-3d\tBalance is $%-3d\n", Thread.currentThread().getName(), sub, balance);
             }
 
 // If insufficient funds, wait until deposit to try again
             else {
                 while (balance < sub) {
-                    System.out.printf("\t\t\t\tThread %s withdrawals $%-3d\twithdrawals - Blocked - Insufficient Funds\n", Thread.currentThread().getName(), sub);
+                    System.out.printf("\t\t\t\t\t\t\t\t\tAgent %s withdrawals $%-3d\twithdrawals - Blocked - Insufficient Funds\n", Thread.currentThread().getName(), sub);
                     sufficientFunds.await();
                 }
             }
