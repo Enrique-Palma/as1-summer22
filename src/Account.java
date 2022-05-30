@@ -1,11 +1,9 @@
 /********************************************************************************
-Enrique Palma Project 1
-CNT4714 Summer C001
-Title:  “Project 1:  An Application Employing Synchronized/Cooperating Multiple
-        Threads In Java Using Locks – A Banking Simulator”
-        Points:   100 points
-        Due Date:  Sunday June 5, 2022 by 11:59 pm (WebCourses time)
-*********************************************************************************/
+ Enrique Palma Project 1
+ Course: CNT 4714 Summer 2022
+ Assignment title: Project 1 – Synchronized, Cooperating Threads Under Locking
+ Due Date: June 5, 2022
+ *********************************************************************************/
 import java.io.*;
 import java.io.IOException;
 import java.util.concurrent.locks.Condition;
@@ -69,7 +67,7 @@ public class Account
 
         //flagging to text file - appending - START of CODE BLOCK
         java.util.Date date= new java.util.Date();
-        try (FileWriter f = new FileWriter("flaggedTransactionsLog.txt:", true);
+        try (FileWriter f = new FileWriter("flaggedTransactionsLog.txt", true);
              BufferedWriter b = new BufferedWriter(f);
              PrintWriter p = new PrintWriter(b);)
         {
