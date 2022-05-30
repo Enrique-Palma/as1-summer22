@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cd79ac7e-315e-4fcf-9477-6fbdb8d88f5b" name="Changes" comment="1.0.2-testing flags">
+    <list default="true" id="cd79ac7e-315e-4fcf-9477-6fbdb8d88f5b" name="Changes" comment="1.0.3-testing flags">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/depositAgent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/withdrawalAgent.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/withdrawlThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/withdrawlThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/depositThread.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/randTransaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/randTransaction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/withdrawlThread.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +26,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -36,6 +40,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -156,7 +161,21 @@
       <option name="project" value="LOCAL" />
       <updated>1653855346419</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="1.0.3-testing flags">
+      <created>1653859396978</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1653859396978</updated>
+    </task>
+    <task id="LOCAL-00015" summary="1.0.3-testing flags">
+      <created>1653859945527</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1653859945527</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -186,7 +205,9 @@
     <MESSAGE value="1.0.1" />
     <MESSAGE value="1.0.1-testing flags" />
     <MESSAGE value="1.0.2-testing flags" />
-    <option name="LAST_COMMIT_MESSAGE" value="1.0.2-testing flags" />
+    <MESSAGE value="ultimate version 1.0 last-changes-before-release" />
+    <MESSAGE value="1.0.3-testing flags" />
+    <option name="LAST_COMMIT_MESSAGE" value="1.0.3-testing flags" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

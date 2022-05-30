@@ -1,24 +1,30 @@
-public class Main {
-        public static void main(String[] args) {
-
-// Create Shared Bank Account
+/********************************************************************************
+ Enrique Palma Project 1
+ CNT4714 Summer C001
+ Title:  “Project 1:  An Application Employing Synchronized/Cooperating Multiple
+ Threads In Java Using Locks – A Banking Simulator”
+ Points:   100 points
+ Due Date:  Sunday June 5, 2022 by 11:59 pm (WebCourses time)
+ *********************************************************************************/
+public class Main
+{
+        public static void main(String[] args)
+        {
+                // Create Shared Bank Account
                 Account account = new Account();
-
-// Prepare Base Output
+                // Prepare Base Output
                 System.out.printf("Deposit Agents\t\t\tWithdrawal Agents\t\t\tBalance\t\t\t\n");
                 System.out.printf("--------------------------------------------------------------------\n");
-
-// Setup Type of Threads
-                depositThread d = new depositThread(account);
-                withdrawlThread w = new withdrawlThread(account);
-
-// Initialize threads
+                // Setup Type of Threads
+                depositAgent d = new depositAgent(account);
+                withdrawalAgent w = new withdrawalAgent(account);
+                // Initialize threads
                 Thread d1 = new Thread(d, "DT1");
                 Thread d2 = new Thread(d, "DT2");
                 Thread d3 = new Thread(d, "DT3");
                 Thread d4 = new Thread(d, "DT4");
                 Thread d5 = new Thread(d, "DT5");
-
+                //////////////////////////////////////
                 Thread w1 = new Thread(w, "WT1");
                 Thread w2 = new Thread(w, "WT2");
                 Thread w3 = new Thread(w, "WT3");
@@ -28,9 +34,8 @@ public class Main {
                 Thread w7 = new Thread(w, "WT7");
                 Thread w8 = new Thread(w, "WT8");
                 Thread w9 = new Thread(w, "WT9");
-                Thread w10 = new Thread(w, "WT10");
-
-// Start threads
+                Thread w10 = new Thread(w, "W10");
+                // Start threads
                 d1.start();
                 w1.start();
                 d2.start();
